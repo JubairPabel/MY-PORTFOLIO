@@ -80,10 +80,12 @@ h1{
 
 h2{
     font-size: 2rem;
+    color: var(--black);
 }
 
 h3{
     font-size: 1.6rem;
+    color: #0c1013;
 }
 
 h4{
@@ -99,6 +101,7 @@ img{
     display: block;
     object-fit: cover;
 }
+
 
 /* button design */
 
@@ -182,7 +185,6 @@ nav button{
     background-color: var(--bg);
 }
  p{
-    padding-bottom: 1000px;
     color: var(--black);
  }
 
@@ -258,7 +260,7 @@ header::before{
 }
 
 .about_container{
-    display: block;
+    display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -276,6 +278,7 @@ header::before{
     align-items: center;
     margin-bottom: 2rem;
     display: block;
+
 
 }
 
@@ -302,3 +305,21 @@ header::before{
 }
 
 /* =======about section end========*/
+
+
+
+/* ======= projects section start========*/
+
+.projects{
+    text-align: center;
+    margin-top: -5rem;
+}
+
+.projects_container .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+}
+
+
+/* ======= projects section start========*/
