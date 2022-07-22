@@ -213,6 +213,12 @@ header{
     flex: 1.5;
 }
 
+.header_right .text-0{
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    color: var(--danger);
+}
+
 .header_right .text-1{
     font-size: 1.8rem;
     margin-bottom: 0.3rem;
@@ -409,13 +415,14 @@ header::before{
     background-color: var(--light_purple);
     border-radius: 0.7rem ;
     box-shadow: 0.3rem 0.3rem 1.2rem rgba(0,0,0,0.2);
+    margin-bottom: 2.5rem;
 
 }
-.projects_container .bar{
-    margin: 1.2rem 0;
+.skills_container .bar{
+    margin: .1rem 0;
 }
 
-.projects_container .bar:first-child{
+.skills_container .bar:first-child{
     margin-top: 0rem;
 }
 
@@ -519,6 +526,12 @@ header::before{
 
 }
 
+@keyframes showText2{
+    100%{
+        opacity: 1;
+    }
+}
+
 .progress-line span::before{
     position: absolute;
     content: "";
@@ -530,6 +543,8 @@ header::before{
     border-bottom-width: 0rem;
     border-right-width: 0rem ;
     border-top-color: var(--bg) ;
+    opacity: 0;
+    animation: showText2 0.5s 1s linear forwards;
 }
 
 .progress-line span::after{
@@ -540,7 +555,9 @@ header::before{
     background-color: var(--bg);
     color: var(--normal);
     padding: 1px 0.5rem;
-    font-size: 0.4rem ;
+    font-size: 0.8rem ;
+    animation: showText2 0.5s 1s linear forwards;
+
 }
 
 .progress-line.progress-line.html span::after{
@@ -583,4 +600,93 @@ header::before{
     content: "55%";
 }
 
+
+
 /* ======= Skills section end========*/
+
+/* ======= gallery section start ========*/
+.gallery_container{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.gallery_container .slider{
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.gallery_container .slides{
+    align-items: center;
+    justify-content: center;
+    padding-right: 5%;
+    display: flex;
+    
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+   
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid var(--blue);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: var(--light_purple);
+
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+/* ======= gallery section end ========*/
