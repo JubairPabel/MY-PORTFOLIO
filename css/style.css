@@ -13,6 +13,10 @@
     --container-width-lg: 80%;
     --container-width-md: 90%;
     --container-width-sm: 94%;
+
+    --card-height: 50vh;
+	--card-width: 120vh;
+    
 }
 
 /* Universal Selector #f5ed0a   #FFC300;*/
@@ -601,27 +605,40 @@ header::before{
 
 /* ======= Skills section end========*/
 
-/* ======= gallery section start ========*/
+/* ======= gallery section start ======== */
 
 .gallery_container{
     align-items: center;
     text-align: center;
     margin-bottom: 2.5rem;
-    
+    position: relative;
+    justify-content: center;
+   
+
 }
 
-.gallery_container .picdiv{
-    width: 57%;
-    height: 400px;
-    left: 50%;
-    top: 400%;
-    position: absolute;
-    transform: translate(-50%,-100%);
-    background-image: url(../image/11.jpg);
-    background-size: 100% 100%;
-    box-shadow: 1px 2px 10px 5px black;
-    margin-bottom: 2.5rem ;
-    animation: slider 9s infinite linear;
+.gallery_container .gallery{
+    
+        background-image: url(../image/11.jpg);
+        background-size: 100% 100%;
+        transform: translate(18%, 0%);
+        width: var(--card-width);
+        height: var(--card-height);
+        padding: 3px;
+        position: relative;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        font-size: 1.5em;
+        color: rgb(88 199 250 / 0%);
+        cursor: pointer;
+        font-family: cursive;
+        margin-bottom: 2.5rem ;
+        box-shadow: 1px 2px 10px 5px black;
+        animation: slider 9s infinite linear;
+    
 }
 
 @keyframes slider{
@@ -632,6 +649,22 @@ header::before{
     110%{background-image: url(../image/33.jpg);}
 }
 
-
-
+.card::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--card-height) / 6);
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	filter: blur(calc(var(--card-height) / 6));
+	background-image: linear-gradient(
+		var(--rotate)
+		, #5ddcff, #3c67e3 43%, #4e00c2);
+	opacity: 1;
+	transition: opacity .5s;
+}
 /* ======= gallery section end ========*/
