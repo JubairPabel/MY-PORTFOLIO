@@ -7,7 +7,7 @@
     --danger: #f75842;
     --border: 0.1rem solid rgba(255,255,255,0.3);
     --yellow: #f5ed0a;
-    --blue: #42f5c5;
+    --blue: #071FED ;
     --light_purple: #3E2F4D;
 
     --container-width-lg: 80%;
@@ -106,6 +106,7 @@ img{
     display: block;
     object-fit: cover;
 }
+
 
 
 /* button design */
