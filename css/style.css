@@ -502,12 +502,12 @@ header::before{
 }
 
 .bar .progress-line.html span{
-    width: 85%;
+    width: 70%;
 
 }
 
 .bar .progress-line.css span{
-    width: 90%;
+    width: 65%;
 
 }
 
@@ -517,7 +517,7 @@ header::before{
 }
 
 .bar .progress-line.php span{
-    width: 80%;
+    width: 83%;
 
 }
 
@@ -532,12 +532,12 @@ header::before{
 }
 
 .bar .progress-line.csharp span{
-    width: 95%;
+    width: 65%;
 
 }
 
 .bar .progress-line.java span{
-    width: 60%;
+    width: 85%;
 
 }
 
@@ -547,7 +547,7 @@ header::before{
 }
 
 .bar .progress-line.plsql span{
-    width: 55%;
+    width: 88%;
 
 }
 
@@ -586,11 +586,11 @@ header::before{
 }
 
 .progress-line.progress-line.html span::after{
-    content: "85%";
+    content: "70%";
 }
 
 .progress-line.progress-line.css span::after{
-    content: "90%";
+    content: "65%";
 }
 
 .progress-line.progress-line.java_script span::after{
@@ -602,7 +602,7 @@ header::before{
 }
 
 .progress-line.progress-line.python span::after{
-    content: "70%";
+    content: "83%";
 }
 
 .progress-line.progress-line.cplusplus span::after{
@@ -610,11 +610,11 @@ header::before{
 }
 
 .progress-line.progress-line.csharp span::after{
-    content: "95%";
+    content: "60%";
 }
 
 .progress-line.progress-line.java span::after{
-    content: "60%";
+    content: "85%";
 }
 
 .progress-line.progress-line.mysql span::after{
@@ -622,7 +622,7 @@ header::before{
 }
 
 .progress-line.progress-line.plsql span::after{
-    content: "55%";
+    content: "88%";
 }
 
 /* ======= Skills section end========*/
@@ -630,12 +630,12 @@ header::before{
 /* ======= gallery section start ======== */
 
 .gallery_container{
+
     align-items: center;
     text-align: center;
     margin-bottom: 2.5rem;
     position: relative;
     justify-content: center;
-   
 
 }
 
